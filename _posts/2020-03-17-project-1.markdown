@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 1
+date: 2020-03-17
+img: cabin.png
+alt: image-alt
+project-date: Março 2020
+client: Caso de Estudo
+category: Web Development
+description: Pequeno projeto que cria alguns gráficos de com aos dados da API <a href="https://thevirustracker.com/api#indexpage">The Virus Tracker</a> sobre o Corona vírus no Brasil e compara com o Estados Unidos, Itália e China.
+
+---
