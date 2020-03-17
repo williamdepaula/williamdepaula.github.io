@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159575482-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159575482-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID 19</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+    <script src="https://unpkg.com/vue-chartkick@0.5.1"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div id="app" class="container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col-sm">
+                <h4>COVID 19 - Total de casos: Brasil | USA | Itália | China</h4>
+                <div>
+                    <line-chart :data="dadosGrafico01" width="600px" height="350px" />
+                </div>
+            </div>
+            <div class="col-sm">
+                <h4>COVID 19 - Informações detalhadas: Brasil </h4>
+                <div>
+                    <line-chart :data="dadosGrafico02" width="600px" height="350px" />
+                </div>
+            </div>
+          </div>
+        <div>
+        <div class="row justify-content-md-center">
+            <h3>COVID 19 - Total de casos: Brasil | USA | Itália | China</h3>
+            <div style="width: 100%;">
+                <geo-chart :data="[['United States', totalCasesUSA], ['Italy', totalCaseIT], ['Brazil', totalCasesBR], ['China', totalCaseCN]]"></geo-chart>
+            </div>
+        </div>
+    </div>  
+    
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                dadosGrafico01: [],
+                dadosGrafico02: [],
+                dadosArrayUSA: '',
+                dadosArrayBr: '',
+                dadosArrayIT: '',
+                dadosArrayCN: ''
+            },
+            created() {
+                this.buscaDados()
+            },
+            computed: {
+                totalCasesUSA() {
+                    return this.retornaUltimaData(this.dadosArrayUSA.data)[3]
+                },
+                totalCasesBR() {
+                    return this.retornaUltimaData(this.dadosArrayBr.data)[3]
+                },
+                totalCaseIT() {
+                    return this.retornaUltimaData(this.dadosArrayIT.data)[3]
+                },
+                totalCaseCN() {
+                    return this.retornaUltimaData(this.dadosArrayCN.data)[3]
+                }
+            },
+            methods: {
+                async buscaDados() {
+                    let url = 'https://thevirustracker.com/free-api?countryTimeline=US'
+                    let dadosUSABruto = await fetch(url);
+                    dadosUSABruto = await dadosUSABruto.json();
+                    this.dadosArrayUSA = this.organizaDadosEmArray(dadosUSABruto, 'USA')
+                    
+                    let dadosUSA = this.organizaDadosGrafico(this.dadosArrayUSA, 3)
+
+
+                    url = 'https://thevirustracker.com/free-api?countryTimeline=BR'
+                    let dadosBrBruto = await fetch(url);
+                    dadosBrBruto = await dadosBrBruto.json();
+
+                    this.dadosArrayBr = this.organizaDadosEmArray(dadosBrBruto, 'Brasil')                    
+                    let dadosTotalCasosBR = this.organizaDadosGrafico(this.dadosArrayBr, 3)
+
+                    this.dadosArray2Br = this.organizaDadosEmArray(dadosBrBruto, 'Casos')                    
+                    let dadosTotalCasos2BR = this.organizaDadosGrafico(this.dadosArray2Br, 3)
+
+                    this.dadosArray2Br = this.organizaDadosEmArray(dadosBrBruto, 'Novos Casos') 
+                    let dadosNovosCasos2BR = this.organizaDadosGrafico(this.dadosArray2Br, 1)
+
+                    this.dadosArray2Br = this.organizaDadosEmArray(dadosBrBruto, 'Mortes no Dia') 
+                    let dadosMortesDiaria2BR = this.organizaDadosGrafico(this.dadosArray2Br, 2)
+
+                    this.dadosArray2Br = this.organizaDadosEmArray(dadosBrBruto, 'Recuperados') 
+                    let dadosTotalRecuperacao2BR = this.organizaDadosGrafico(this.dadosArray2Br, 4)
+
+                    this.dadosArray2Br = this.organizaDadosEmArray(dadosBrBruto, 'Mortes Totais') 
+                    let dadosMortes2BR = this.organizaDadosGrafico(this.dadosArray2Br, 5)
+                    
+                    this.dadosGrafico02 = dadosTotalCasos2BR
+                    this.dadosGrafico02[1] = dadosNovosCasos2BR[0]
+                    this.dadosGrafico02[2] = dadosMortesDiaria2BR[0]
+                    this.dadosGrafico02[3] = dadosTotalRecuperacao2BR[0]
+                    this.dadosGrafico02[4] = dadosMortes2BR[0]
+
+                    url = 'https://thevirustracker.com/free-api?countryTimeline=IT'
+                    let dadosItBruto = await fetch(url);
+                    dadosItBruto = await dadosItBruto.json();
+                    this.dadosArrayIT = this.organizaDadosEmArray(dadosItBruto, 'Itália')
+                    
+                    let dadosIT = this.organizaDadosGrafico(this.dadosArrayIT, 3)
+
+                    url = 'https://thevirustracker.com/free-api?countryTimeline=CN'
+                    let dadosCnBruto = await fetch(url);
+                    dadosCnBruto = await dadosCnBruto.json();
+                    this.dadosArrayCN = this.organizaDadosEmArray(dadosCnBruto, 'China')
+                    
+                    let dadosCN = this.organizaDadosGrafico(this.dadosArrayCN, 3)
+
+                    this.dadosGrafico01 = dadosUSA
+                    this.dadosGrafico01[1] = dadosTotalCasosBR[0]
+                    this.dadosGrafico01[2] = dadosIT[0]
+                    this.dadosGrafico01[3] = dadosCN[0]
+                },
+                retornaUltimaData(lista) {
+                    if (lista instanceof Array){
+                        return lista[lista.length-2]
+                    }
+
+                    return 0
+                },
+                organizaDadosGrafico(dados, key) {
+                    let data = []
+                    let info = {
+                        name: dados.name,
+                        data: {}
+                    }
+                    dados.data.forEach(item => {
+                        info.data[item[0]] = item[key]
+                    })
+
+                    data.push(info)
+                    return data
+                },
+                organizaDadosEmArray(dados, label) {
+                    let infos = {
+                        name: label,
+                        data: []
+                    }
+                    Object.entries(dados.timelineitems[0]).forEach(([key, value])=> {
+                        infos.data.push([
+                            key,
+                            value.new_daily_cases,
+                            value.new_daily_deaths,
+                            value.total_cases,
+                            value.total_deaths,
+                            value.total_recoveries
+                        ])
+                    })
+
+                    return infos
+                }
+            }
+        })
+    </script>
+</body>
+</html>
