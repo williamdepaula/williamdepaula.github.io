@@ -25,13 +25,13 @@
             <div class="col-sm">
                 <h4>COVID 19 - Total de casos: Brasil | USA | Itália | China</h4>
                 <div>
-                    <line-chart :data="dadosGrafico01" width="600px" height="350px" />
+                    <line-chart :data="dadosGrafico01" width="600px" height="280px" />
                 </div>
             </div>
             <div class="col-sm">
                 <h4>COVID 19 - Informações detalhadas: Brasil </h4>
                 <div>
-                    <line-chart :data="dadosGrafico02" width="600px" height="350px" />
+                    <line-chart :data="dadosGrafico02" width="600px" height="280px" />
                 </div>
             </div>
           </div>
@@ -42,6 +42,17 @@
                 <geo-chart :data="[['United States', totalCasesUSA], ['Italy', totalCaseIT], ['Brazil', totalCasesBR], ['China', totalCaseCN]]"></geo-chart>
             </div>
         </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 William de Paula:
+            <a href="https://williamdepaula.github.io/"> williamdepaula.github.io</a>
+            </div>
+            <!-- Copyright -->
+        
+        </footer>
+        <!-- Footer -->
     </div>  
     
     <script>
