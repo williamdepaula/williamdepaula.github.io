@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2020-03-17
-img: coronavirus.jpg
+img: coronavirus.png
 alt: image-alt
 project-date: Março 2020
 client: Caso de Estudo
