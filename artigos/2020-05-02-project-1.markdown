@@ -4,7 +4,7 @@ modal-id: 1
 date: 2020-05-02
 img: markdown_vscode.jpg
 alt: Commom place book
-project-date: 03 2020
+project-date: 05 2020
 client: Artigo
 category: Organização Pessoal
 description: Fazendo anotações e referências eficientes com o plugin Markdown Preview Enhanced para VS Code - No passado grandes pensadores e inventores tinham cadernos de anotações onde eles anotavam ideias, estudos e novos conhecimentos isto era conhecido como Commonplace Book. Nos dias de hoje, com uma gama de informações multimídias e programáveis uma nova abordagem pode ser necessária, apresento neste artigo uma forma de melhor organizar os conhecimentos, principalmente nas areas de Tecnológia da Informação.
