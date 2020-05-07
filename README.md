@@ -2,6 +2,7 @@
 # Site pessoal
 
 ## To-Do
+- [X] - Refatoração, fazer o site ficar estático, sem minificadores e compiladores.
 - [ ] - Integrar com flask e flask-freeze
 - [ ] - Fazer lateral minimizar/aumentar por um botão
 - [ ] - Fazer interação quando a pessoal clicar no sobre mim conforme ideia [http://www.demo.mutationmedia.net/DIFFERENCE/](http://www.demo.mutationmedia.net/DIFFERENCE/)
