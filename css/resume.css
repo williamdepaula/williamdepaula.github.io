@@ -174,3 +174,9 @@ a {
 a:hover, a:focus, a:active {
   color: #43b2e8;
 }
+
+
+.container-fluid.p-0 {
+  margin-left: 30px;
+  max-width: 90%;
+}
