@@ -11,6 +11,8 @@ languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 
+publishDir = "docs"
+
 # Author config
 [author]
   name = "William de Paula"
@@ -53,3 +55,4 @@ languageName = "English"
   [markup.highlight]
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+    
