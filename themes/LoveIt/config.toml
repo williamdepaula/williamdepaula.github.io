@@ -201,9 +201,9 @@
   # Social config in home page
   # 主页的社交信息设置
   [params.social]
-    GitHub = ""
-    Linkedin = ""
-    Twitter = ""
+    GitHub = "https://github.com/williamdepaula/"
+    Linkedin = "https://www.linkedin.com/in/william-de-paula/"
+    Twitter = "https://twitter.com/williampaula"
     Instagram = ""
     Facebook = ""
     Telegram = ""
