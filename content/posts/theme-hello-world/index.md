@@ -1,12 +1,24 @@
 ---
+weight: 2
 title: "Sobre mim e este site"
 date: 2023-09-26T10:23:56-04:00
+lastmod: 2023-09-27T07:28:56-04:00
 draft: false
-description: "Sobre min"
-images: ["eu.jpg"]
+author: "William de Paula"
+authorLink: "https://williamdepaula.github.io/"
+description: "Conheça um pouco sobre mim e sobre o que esperar deste site."
+images: []
+resources:
+  - name: "featured-image"
+    src: "william-de-paula-crop.jpg"
+
+tags: ["About Me"]
+categories: ["About Me"]
 
 lightgallery: true
 
+toc:
+  auto: false
 math:
   enable: true
 ---

@@ -9,8 +9,8 @@ authorLink: "https://dillonzq.com"
 description: "Find out how to create and organize your content quickly and intuitively in LoveIt theme."
 images: []
 resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+  - name: "featured-image"
+    src: "featured-image.jpg"
 
 tags: ["content", "Markdown"]
 categories: ["documentation"]
@@ -31,9 +31,9 @@ Find out how to create and organize your content quickly and intuitively in **Lo
 
 A few suggestions to help you get a good looking site quickly:
 
-* Keep post pages in the `content/posts` directory, for example: `content/posts/my-first-post.md`
-* Keep other pages in the `content` directory, for example: `content/about.md`
-* Local resources organization
+- Keep post pages in the `content/posts` directory, for example: `content/posts/my-first-post.md`
+- Keep other pages in the `content` directory, for example: `content/about.md`
+- Local resources organization
 
 {{< admonition note "Local Resource Reference" >}}
 {{< version 0.2.10 >}}
@@ -131,41 +131,41 @@ seo:
 ---
 ```
 
-* **title**: the title for the content.
-* **subtitle**: {{< version 0.2.0 >}} the subtitle for the content.
-* **date**: the datetime assigned to this page, which is usually fetched from the `date` field in front matter, but this behaviour is configurabl in the [site configuration](../theme-documentation-basics#site-configuration).
-* **lastmod**: the datetime at which the content was last modified.
-* **draft**: if `true`, the content will not be rendered unless the `--buildDrafts`/`-D` flag is passed to the `hugo` command.
-* **author**: the author for the content.
-* **authorLink**: the link of the author.
-* **description**: the description for the content.
-* **license**: the special lisence for this content.
-* **images**: page images for Open Graph and Twitter Cards.
+- **title**: the title for the content.
+- **subtitle**: {{< version 0.2.0 >}} the subtitle for the content.
+- **date**: the datetime assigned to this page, which is usually fetched from the `date` field in front matter, but this behaviour is configurabl in the [site configuration](../theme-documentation-basics#site-configuration).
+- **lastmod**: the datetime at which the content was last modified.
+- **draft**: if `true`, the content will not be rendered unless the `--buildDrafts`/`-D` flag is passed to the `hugo` command.
+- **author**: the author for the content.
+- **authorLink**: the link of the author.
+- **description**: the description for the content.
+- **license**: the special lisence for this content.
+- **images**: page images for Open Graph and Twitter Cards.
 
-* **tags**: the tags for the content.
-* **categories**: the categories for the content.
+- **tags**: the tags for the content.
+- **categories**: the categories for the content.
 
-* **featuredImage**: the featured image for the content.
-* **featuredImagePreview**: the featured image for the content preview in the home page.
+- **featuredImage**: the featured image for the content.
+- **featuredImagePreview**: the featured image for the content preview in the home page.
 
-* **hiddenFromHomePage**: if `true`, the content will not be shown in the home page.
-* **hiddenFromSearch**: {{< version 0.2.0 >}} if `true`, the content will not be shown in the search results.
-* **twemoji**: {{< version 0.2.0 >}} if `true`, the content will enable the twemoji.
-* **lightgallery**: if `true`, images in the content will be shown as the gallery.
-* **ruby**: {{< version 0.2.0 >}} if `true`, the content will enable the [ruby extended syntax](#ruby).
-* **fraction**: {{< version 0.2.0 >}} if `true`, the content will enable the [fraction extended syntax](#fraction).
-* **fontawesome**: {{< version 0.2.0 >}} if `true`, the content will enable the [Font Awesome extended syntax](#fontawesome).
-* **linkToMarkdown**: if `true`, the footer of the content will be shown the link to the orignal Markdown file.
-* **rssFullText**: {{< version 0.2.4 >}} if `true`, the full text content will be shown in RSS.
+- **hiddenFromHomePage**: if `true`, the content will not be shown in the home page.
+- **hiddenFromSearch**: {{< version 0.2.0 >}} if `true`, the content will not be shown in the search results.
+- **twemoji**: {{< version 0.2.0 >}} if `true`, the content will enable the twemoji.
+- **lightgallery**: if `true`, images in the content will be shown as the gallery.
+- **ruby**: {{< version 0.2.0 >}} if `true`, the content will enable the [ruby extended syntax](#ruby).
+- **fraction**: {{< version 0.2.0 >}} if `true`, the content will enable the [fraction extended syntax](#fraction).
+- **fontawesome**: {{< version 0.2.0 >}} if `true`, the content will enable the [Font Awesome extended syntax](#fontawesome).
+- **linkToMarkdown**: if `true`, the footer of the content will be shown the link to the orignal Markdown file.
+- **rssFullText**: {{< version 0.2.4 >}} if `true`, the full text content will be shown in RSS.
 
-* **toc**: {{< version 0.2.9 changed >}} the same as the `params.page.toc` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **code**: {{< version 0.2.0 >}} the same as the `params.page.code` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **math**: {{< version 0.2.0 changed >}} the same as the `params.page.math` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **mapbox**: {{< version 0.2.0 >}} the same as the `params.page.mapbox` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **share**: the same as the `params.page.share` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **comment**: {{< version 0.2.0 changed >}} the same as the `params.page.comment` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **library**: {{< version 0.2.7 >}} the same as the `params.page.library` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **seo**: {{< version 0.2.10 >}} the same as the `params.page.seo` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **toc**: {{< version 0.2.9 changed >}} the same as the `params.page.toc` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **code**: {{< version 0.2.0 >}} the same as the `params.page.code` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **math**: {{< version 0.2.0 changed >}} the same as the `params.page.math` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **mapbox**: {{< version 0.2.0 >}} the same as the `params.page.mapbox` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **share**: the same as the `params.page.share` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **comment**: {{< version 0.2.0 changed >}} the same as the `params.page.comment` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **library**: {{< version 0.2.7 >}} the same as the `params.page.library` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **seo**: {{< version 0.2.10 >}} the same as the `params.page.seo` part in the [site configuration](../theme-documentation-basics#site-configuration).
 
 {{< admonition tip >}}
 {{< version 0.2.10 >}}
@@ -177,11 +177,12 @@ it is not necessary to set the parameter `featuredImage` or `featuredImagePrevie
 
 ```yaml
 resources:
-- name: featured-image
-  src: featured-image.jpg
-- name: featured-image-preview
-  src: featured-image-preview.jpg
+  - name: featured-image
+    src: featured-image.jpg
+  - name: featured-image-preview
+    src: featured-image-preview.jpg
 ```
+
 {{< /admonition >}}
 
 ## 3 Content Summaries
@@ -263,14 +264,14 @@ and some text content in the form of escape characters
 (such as `\(`/`\)`/`\[`/`\]`/`\\`) escape processing will be performed automatically,
 therefore, additional escape character expressions are required for these places to achieve automatic rendering:
 
-* `_` -> `\_`
-* `*` -> `\*`
-* `>>` -> `\>>`
-* `\(` -> `\\(`
-* `\)` -> `\\)`
-* `\[` -> `\\[`
-* `\]` -> `\\]`
-* `\\` -> `\\\\`
+- `_` -> `\_`
+- `*` -> `\*`
+- `>>` -> `\>>`
+- `\(` -> `\\(`
+- `\)` -> `\\)`
+- `\[` -> `\\[`
+- `\]` -> `\\]`
+- `\\` -> `\\\\`
 
 **LoveIt** theme supports [`raw` shortcode](../theme-documentation-extended-shortcodes#12-raw) to avoid these escape characters,
 which helps you write raw mathematical formula content.
@@ -278,7 +279,7 @@ which helps you write raw mathematical formula content.
 Example `raw` input:
 
 ```markdown
-Inline Formula: {{</* raw */>}}\(\mathbf{E}=\sum_{i} \mathbf{E}_{i}=\mathbf{E}_{1}+\mathbf{E}_{2}+\mathbf{E}_{3}+\cdots\){{</* /raw */>}}
+Inline Formula: {{</* raw */>}}\(\mathbf{E}=\sum*{i} \mathbf{E}*{i}=\mathbf{E}_{1}+\mathbf{E}_{2}+\mathbf{E}\_{3}+\cdots\){{</* /raw */>}}
 
 Block Formula:
 
@@ -289,7 +290,7 @@ Block Formula:
 
 The rendered output looks like this:
 
-Inline Formula: {{< raw >}}\(\mathbf{E}=\sum_{i} \mathbf{E}_{i}=\mathbf{E}_{1}+\mathbf{E}_{2}+\mathbf{E}_{3}+\cdots\){{< /raw >}}
+Inline Formula: {{< raw >}}\(\mathbf{E}=\sum*{i} \mathbf{E}*{i}=\mathbf{E}_{1}+\mathbf{E}_{2}+\mathbf{E}\_{3}+\cdots\){{< /raw >}}
 
 Block Formula:
 
@@ -302,8 +303,8 @@ Block Formula:
 
 The default inline delimiters are:
 
-* `$ ... $`
-* `\( ... \)` (escaped: `\\( ... \\)`)
+- `$ ... $`
+- `\( ... \)` (escaped: `\\( ... \\)`)
 
 For example:
 
@@ -313,19 +314,19 @@ $c = \pm\sqrt{a^2 + b^2}$ and \\(f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 
 
 The rendered output looks like this:
 
-$c = \pm\sqrt{a^2 + b^2}$ and \\(f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi\\)
+$c = \pm\sqrt{a^2 + b^2}$ and \\(f(x)=\int\_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi\\)
 
 #### Block Formula
 
 The default block delimiters are:
 
-* `$$ ... $$`
-* `\[ ... \]` (escaped: `\\[ ... \\]`)
-* `\begin{equation} ... \end{equation}` (unnumbered: `\begin{equation*} ... \end{equation*}`)
-* `\begin{align} ... \end{align}` (unnumbered: `\begin{align*} ... \end{align*}`)
-* `\begin{alignat} ... \end{alignat}` (unnumbered: `\begin{alignat*} ... \end{alignat*}`)
-* `\begin{gather} ... \end{gather}` (unnumbered: `\begin{gather*} ... \end{gather*}`)
-* `\begin{CD} ... \end{CD}`
+- `$$ ... $$`
+- `\[ ... \]` (escaped: `\\[ ... \\]`)
+- `\begin{equation} ... \end{equation}` (unnumbered: `\begin{equation*} ... \end{equation*}`)
+- `\begin{align} ... \end{align}` (unnumbered: `\begin{align*} ... \end{align*}`)
+- `\begin{alignat} ... \end{alignat}` (unnumbered: `\begin{alignat*} ... \end{alignat*}`)
+- `\begin{gather} ... \end{gather}` (unnumbered: `\begin{gather*} ... \end{gather*}`)
+- `\begin{CD} ... \end{CD}`
 
 For example:
 
@@ -371,32 +372,32 @@ $$ c = \pm\sqrt{a^2 + b^2} $$
 \\[ f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\]
 
 \begin{equation*}
-  \rho \frac{\mathrm{D} \mathbf{v}}{\mathrm{D} t}=\nabla \cdot \mathbb{P}+\rho \mathbf{f}
+\rho \frac{\mathrm{D} \mathbf{v}}{\mathrm{D} t}=\nabla \cdot \mathbb{P}+\rho \mathbf{f}
 \end{equation*}
 
 \begin{equation}
-  \mathbf{E}=\sum_{i} \mathbf{E}\_{i}=\mathbf{E}\_{1}+\mathbf{E}\_{2}+\mathbf{E}_{3}+\cdots
+\mathbf{E}=\sum*{i} \mathbf{E}\_{i}=\mathbf{E}\_{1}+\mathbf{E}\_{2}+\mathbf{E}*{3}+\cdots
 \end{equation}
 
 \begin{align}
-  a&=b+c \\\\
-  d+e&=f
+a&=b+c \\\\
+d+e&=f
 \end{align}
 
 \begin{alignat}{2}
-   10&x+&3&y = 2 \\\\
-   3&x+&13&y = 4
+10&x+&3&y = 2 \\\\
+3&x+&13&y = 4
 \end{alignat}
 
 \begin{gather}
-   a=b \\\\
-   e=b+c
+a=b \\\\
+e=b+c
 \end{gather}
 
 \begin{CD}
-   A @>a\>> B \\\\
+A @>a\>> B \\\\
 @VbVV @AAcA \\\\
-   C @= D
+C @= D
 \end{CD}
 
 {{< admonition tip >}}
