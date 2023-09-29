@@ -4,5 +4,13 @@
         <link>https://williamdepaula.github.io/categories/</link>
         <description>Categories - Category - William de Paula</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>williampereiradepaula@gmail.com (William de Paula)</managingEditor>
-            <webMaster>williampereiradepaula@gmail.com (William de Paula)</webMaster><atom:link href="https://williamdepaula.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>williampereiradepaula@gmail.com (William de Paula)</webMaster><lastBuildDate>Tue, 26 Sep 2023 10:23:56 -0400</lastBuildDate><atom:link href="https://williamdepaula.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>About Me</title>
+    <link>https://williamdepaula.github.io/categories/about-me/</link>
+    <pubDate>Tue, 26 Sep 2023 10:23:56 -0400</pubDate>
+    <author>William de Paula</author>
+    <guid>https://williamdepaula.github.io/categories/about-me/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

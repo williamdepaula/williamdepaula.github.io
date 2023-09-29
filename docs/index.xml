@@ -8,10 +8,10 @@
             <atom:link href="https://williamdepaula.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Sobre mim e este site</title>
-    <link>https://williamdepaula.github.io/posts/hello/</link>
+    <link>https://williamdepaula.github.io/posts/theme-hello-world/</link>
     <pubDate>Tue, 26 Sep 2023 10:23:56 -0400</pubDate>
     <author>William de Paula</author>
-    <guid>https://williamdepaula.github.io/posts/hello/</guid>
+    <guid>https://williamdepaula.github.io/posts/theme-hello-world/</guid>
     <description><![CDATA[Bem-vindo ao meu mundo digital! Olá, eu sou William de Paula, um entusiasta de tecnologia e um apaixonado por desenvolvimento e inovação. Com uma carreira de mais de 5 anos na área de sistemas de informação, sou um nerd que gosta de códigos e soluções inovadoras. Ao longo dos anos, a minha jornada profissional me levou a explorar o fascinante universo do Node.js e AWS Serverless.
 Aqui, neste cantinho da internet, estou empolgado em compartilhar meus conhecimentos, experiências e insights.]]></description>
 </item>
