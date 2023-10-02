@@ -531,7 +531,7 @@
     enable = true
     # Google Analytics
     [params.analytics.google]
-      id = "GTM-W8DG2CNC"
+      id = "G-6WJ5HQ21HC"
       # whether to anonymize IP
       # 是否匿名化用户 IP
       anonymizeIP = true
