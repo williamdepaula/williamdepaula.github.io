@@ -201,9 +201,9 @@
   # Social config in home page
   # 主页的社交信息设置
   [params.social]
-    GitHub = "https://github.com/williamdepaula/"
-    Linkedin = "https://www.linkedin.com/in/william-de-paula/"
-    Twitter = "https://twitter.com/williampaula"
+    GitHub = "williamdepaula"
+    Linkedin = "william-de-paula"
+    Twitter = "williampaula"
     Instagram = ""
     Facebook = ""
     Telegram = ""
@@ -531,7 +531,7 @@
     enable = false
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "GTM-W8DG2CNC"
       # whether to anonymize IP
       # 是否匿名化用户 IP
       anonymizeIP = true
