@@ -6,8 +6,17 @@ Usa a ultima versão em [Hugo](https://github.com/gohugoio/hugo/releases)
 
 ## Novo post
 
+Use o script
+
 ```shell
-$ hugo new content content/posts/my-first-post.md
+./create-content.sh titulo-do-conteudo
+```
+
+Ou faça manualmente
+
+```shell
+$ hugo new content content/posts/my-first-post.br.md
+$ hugo new content content/posts/my-first-post.br.md
 ```
 
 Altere o cabeçario conforme o exemplo
