@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on William de Paula</title>
+    <link>https://williamdepaula.github.io/post/</link>
+    <description>Recent content in Posts on William de Paula</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <managingEditor>williampereiradepaula@gmail.com (William de Paula)</managingEditor>
+    <webMaster>williampereiradepaula@gmail.com (William de Paula)</webMaster>
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://williamdepaula.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me and this site</title>
+      <link>https://williamdepaula.github.io/post/sobre-mim-e-este-site/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><author>williampereiradepaula@gmail.com (William de Paula)</author>
+      <guid>https://williamdepaula.github.io/post/sobre-mim-e-este-site/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-my-digital-world&#34;&gt;Welcome to my digital world!&lt;/h1&gt;&#xA;&lt;p&gt;Hi, I&amp;rsquo;m William de Paula, a technology enthusiast with a passion for development and innovation. With a career of more than 6 years in information systems, I&amp;rsquo;m a nerd who loves code and innovative solutions. Over the years, my professional journey has led me to explore the fascinating world of Node.js and AWS Serverless.&lt;/p&gt;&#xA;&lt;p&gt;Here, in this little corner of the internet, I&amp;rsquo;m excited to share my knowledge, experiences and insights.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

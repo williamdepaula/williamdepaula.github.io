@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>William de Paula</title>
+    <link>https://williamdepaula.github.io/</link>
+    <description>Recent content on William de Paula</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <managingEditor>williampereiradepaula@gmail.com (William de Paula)</managingEditor>
+    <webMaster>williampereiradepaula@gmail.com (William de Paula)</webMaster>
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://williamdepaula.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me and this site</title>
+      <link>https://williamdepaula.github.io/post/sobre-mim-e-este-site/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><author>williampereiradepaula@gmail.com (William de Paula)</author>
+      <guid>https://williamdepaula.github.io/post/sobre-mim-e-este-site/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-my-digital-world&#34;&gt;Welcome to my digital world!&lt;/h1&gt;&#xA;&lt;p&gt;Hi, I&amp;rsquo;m William de Paula, a technology enthusiast with a passion for development and innovation. With a career of more than 6 years in information systems, I&amp;rsquo;m a nerd who loves code and innovative solutions. Over the years, my professional journey has led me to explore the fascinating world of Node.js and AWS Serverless.&lt;/p&gt;&#xA;&lt;p&gt;Here, in this little corner of the internet, I&amp;rsquo;m excited to share my knowledge, experiences and insights.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>https://williamdepaula.github.io/page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>williampereiradepaula@gmail.com (William de Paula)</author>
+      <guid>https://williamdepaula.github.io/page/about/</guid>
+      <description>&lt;p&gt;My name is William de Paula, I&amp;rsquo;m a developer with a passion for technology, with expertise in JavaScript, Node.js, TypeScript and AWS, especially in the serverless universe.&#xA;I currently work creating, integrating and maintaining voice and text chatbots, connecting them to external APIs, databases and other tools to deliver rich and intuitive experiences to users.&#xA;With a degree in Information Systems from UFMS, I have one foot in innovation and the other in practicality, always looking for solutions that simplify people&amp;rsquo;s lives.&#xA;When I&amp;rsquo;m not immersed in code, you&amp;rsquo;ll find me playing boardgames, exploring nature with my two dogs or enjoying special moments with my teenage girlfriend, who is now my wife. For me, balance is the key: between technology and nature, between professional challenges and moments of relaxation.&#xA;After all, life is like a well-written code: it needs logic, but also a touch of creativity and fun!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
