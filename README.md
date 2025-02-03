@@ -45,6 +45,20 @@ Rodar localmente com os arquivos em draft
 $ hugo server -D
 ```
 
+## Imagem ou Galeria
+
+Para exibir uma imagem
+{{< figure src="/img/demystifying-ddd-a-practical-guide/Domain-driven-design.br.png" link="/img/demystifying-ddd-a-practical-guide/Domain-driven-design.br.png" >}}
+
+Para exibir todas as imagem de um diretorio em uma galeria
+{{< gallery dir="/img/demystifying-ddd-a-practical-guide/" />}}
+
 ## Tema
 
 [Beautiful Hugo](https://themes.gohugo.io/themes/beautifulhugo/)
+
+## Modulos
+
+[Hugo Images Module](https://images.hugomods.com/docs/processing/resizing/)
+
+[Hugo Easy Gallery](https://github.com/liwenyip/hugo-easy-gallery)

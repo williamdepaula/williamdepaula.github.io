@@ -1,2 +1,6 @@
 github.com/halogenica/beautifulhugo v0.0.0-20241117162719-7b8953f455a4 h1:N7FQM+5KHUO5Kz65TU841CqSM/P/lOMbbPyjqKYnBQU=
 github.com/halogenica/beautifulhugo v0.0.0-20241117162719-7b8953f455a4/go.mod h1:4dwHt6njigk+fr9W3Bg+OflL4LKzkjbXAULXvr3mYLs=
+github.com/hugomods/images v0.11.2 h1:d7u3c/ePboeOGx8OI5eUnilpA79YvD7KJjUgqVMR83Y=
+github.com/hugomods/images v0.11.2/go.mod h1:U6Gwj16LKvk66rOMyGFrnF6f0aV8lT89lqOsckOAjYY=
+github.com/liwenyip/hugo-easy-gallery v0.0.0-20220317060806-364224a1031c h1:hrltBL583MlICBG/JXexhV+nAXLRMzbk1qxYj/bkUWU=
+github.com/liwenyip/hugo-easy-gallery v0.0.0-20220317060806-364224a1031c/go.mod h1:D6uU0Pn65zsN6+Dw2MziIrXGe64mys/uXN0YLifcHTI=
