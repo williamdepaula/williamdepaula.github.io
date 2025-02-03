@@ -1,6 +1,6 @@
 ---
 date: "2025-02-02T22:53:53-04:00"
-draft: true
+draft: false
 title: "Demystifying Ddd a Practical Guide"
 subtitle: ""
 tags: ["DDD"]

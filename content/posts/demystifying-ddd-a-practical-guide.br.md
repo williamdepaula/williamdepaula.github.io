@@ -1,6 +1,6 @@
 ---
 date: "2025-02-02T22:53:53-04:00"
-draft: true
+draft: false
 title: "Desmistificando o DDD: Um Guia Prático"
 subtitle: ""
 tags: ["DDD"]
