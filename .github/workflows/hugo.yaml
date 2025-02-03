@@ -57,7 +57,7 @@ jobs:
           TZ: America/Los_Angeles
         run: |
           mkdir -p ./docs
-          run: touch ./docs/.nojekyll
+          touch ./docs/.nojekyll
           hugo \
             --gc \
             --minify \
