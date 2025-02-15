@@ -53,6 +53,32 @@ jobs:
           # Cria .nojekyll para desativar o processamento do Jekyll
           touch ./docs/.nojekyll
 
+          - name: Debug - Listar arquivos gerados
+          run: |
+            echo "Estrutura do diretório docs:"
+            ls -R ./docs
+            echo "----------------------------------"
+            echo "Arquivos potencialmente problemáticos:"
+            find ./docs -name '_config.yml' -o -name 'Gemfile*' -o -name '*.scss'
+
+          - name: Validar ausência de Jekyll/Sass
+          run: |
+            if find ./docs -name '_config.yml' -o -name 'Gemfile*' -o -name '*.scss' | grep -q .; then
+              echo "::error ::Arquivos do Jekyll/Sass detectados!"
+              exit 1
+            else
+              echo "Nenhum arquivo do Jekyll/Sass encontrado ✅"
+            fi
+
+          - name: Verificar .nojekyll
+          run: |
+            if [ ! -f ./docs/.nojekyll ]; then
+              echo "::error ::Arquivo .nojekyll não encontrado!"
+              exit 1
+            else
+              echo ".nojekyll presente ✅"
+            fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
