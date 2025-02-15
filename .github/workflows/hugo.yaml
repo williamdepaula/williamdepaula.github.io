@@ -34,6 +34,15 @@ jobs:
     env:
       HUGO_VERSION: 0.141.0
     steps:
+      - name: Clear Hugo cache
+        run: rm -rf ${{ runner.temp }}/hugo_cache
+
+      - name: Clean up docs folder
+        run: |
+          rm -rf ./docs
+          mkdir -p ./docs
+          chmod -R 777 ./docs
+
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
