@@ -1,6 +1,6 @@
 ---
 date: "2025-02-14T21:34:37-04:00"
-draft: true
+draft: false
 title: "Brag Document"
 subtitle: "Crie um documento de ostentação para não esquecer suas vitorias."
 tags: ["Organização Pessoal"]
